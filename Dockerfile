@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM centos:7
 
-RUN apg-get update && apt-get install -y python3 python-pip
+RUN yum install -y python3-pip
 
 RUN pip3 install flask
 
